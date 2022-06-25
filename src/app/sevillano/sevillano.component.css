@@ -1,4 +1,4 @@
-body, html {
+#page-top{
 	font-family: 'Open Sans', serif;
 	text-rendering: optimizeLegibility !important;
 	-webkit-font-smoothing: antialiased !important;
@@ -181,8 +181,8 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 .intro h1 {
 	font-family: 'Rochester', cursive;
 	color: #fff;
-	font-size: 10em;
-	font-weight: 400;
+	font-size: 4em;
+	font-weight: 40;
 	margin-top: 0;
 }
 .intro span {
@@ -198,7 +198,8 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 header .intro-text {
 	padding-top: 200px;
 	padding-bottom: 50px;
-	text-align: center;
+	text-align: left;
+	margin-left: 10px;
 }
 /* Features Section */
 #features {
