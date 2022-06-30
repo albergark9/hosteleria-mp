@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SevillanoService } from './sevillano.service';
 
 @Component({
   selector: 'app-sevillano',
@@ -6,10 +7,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sevillano.component.css']
 })
 export class SevillanoComponent implements OnInit {
-
-  constructor() { }
+  hola: string = "";
+  
+  constructor(private service: SevillanoService) { }
 
   ngOnInit(): void {
+    this.getHelloWorld();
+  }
+
+  getHelloWorld(){
+    this.service.getHelloWorld()
+    .subscribe({
+      next:(response) => {
+          this.hola = response["hola"];
+      }, error:(error) => {
+            console.log(error);  
+      }
+    });
   }
 
 }
