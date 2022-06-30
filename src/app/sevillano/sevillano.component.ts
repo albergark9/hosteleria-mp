@@ -19,7 +19,7 @@ export class SevillanoComponent implements OnInit {
     this.service.getHelloWorld()
     .subscribe({
       next:(response) => {
-          this.hola = response["hola"];
+          this.hola = response[0].name;
       }, error:(error) => {
             console.log(error);  
       }

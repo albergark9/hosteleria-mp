@@ -17,7 +17,7 @@ export class SevillanoService {
       })
     };
 
-    return this.http.get(this.url + "/hola", httpOptions).pipe(catchError(this.handleError));
+    return this.http.get(this.url + "/restaurants", httpOptions).pipe(catchError(this.handleError));
   }
   
   private handleError(error: HttpErrorResponse) {
