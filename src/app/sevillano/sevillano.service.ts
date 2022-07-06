@@ -10,14 +10,14 @@ export class SevillanoService {
 
   constructor(private http: HttpClient) { }
 
-  getHelloWorld() {
+  getRestaurantMenu(restaurant_name: string) {
     const httpOptions = {
       headers: new HttpHeaders({
         'Content-Type':  'application/json'
       })
     };
 
-    return this.http.get(this.url + "/restaurants", httpOptions).pipe(catchError(this.handleError));
+    return this.http.get(this.url + "/restaurants/"+restaurant_name+"/all", httpOptions).pipe(catchError(this.handleError));
   }
   
   private handleError(error: HttpErrorResponse) {
