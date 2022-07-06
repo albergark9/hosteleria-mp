@@ -32,9 +32,9 @@
             <h2 class="menu-section-title">{{mealCat.fullname_es}}</h2>
             <div *ngFor="let dish of mealCat.dishes">
               <div class="menu-item">
-                <div class="menu-item-name">{{dish.fullname_es}} / {{dish.fullname_en}}</div>
-                <div class="menu-item-price">{{dish.prize | number:'1.2-2'}} €</div>    
-                <div class="menu-item-description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, duis sed dapibus leo nec ornare diam. </div>
+                <div class="menu-item-name">{{dish.fullname_es}}</div>
+                <div class="menu-item-price">{{dish.prize | number:'1.2-2'}} €</div>  
+                <div class="menu-item-description">{{dish.fullname_en}}</div>
                 
               </div>
             </div>
