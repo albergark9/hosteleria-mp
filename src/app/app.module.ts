@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { SevillanoComponent } from './sevillano/sevillano.component';
 
 import { SevillanoService } from './sevillano/sevillano.service';
+import { AppService } from './app.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +19,7 @@ import { SevillanoService } from './sevillano/sevillano.service';
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [SevillanoService],
+  providers: [AppService,SevillanoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
