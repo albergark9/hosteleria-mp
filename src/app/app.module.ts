@@ -8,11 +8,13 @@ import { SevillanoComponent } from './sevillano/sevillano.component';
 
 import { SevillanoService } from './sevillano/sevillano.service';
 import { AppService } from './app.service';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SevillanoComponent
+    SevillanoComponent,
+    LandingPageComponent
   ],
   imports: [
     BrowserModule,

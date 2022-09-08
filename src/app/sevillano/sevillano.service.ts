@@ -19,6 +19,7 @@ export class SevillanoService {
 
     return this.http.get(this.url + "/restaurants/"+restaurant_name+"/all", httpOptions).pipe(catchError(this.handleError));
   }
+
   
   private handleError(error: HttpErrorResponse) {
     if (error.status === 400) {

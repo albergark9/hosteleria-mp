@@ -9,19 +9,17 @@ import { SevillanoService } from './sevillano.service';
 })
 export class SevillanoComponent implements OnInit {
   sevillano?: any;
-  subscriber?: any;
+  restaurant_name?: string;
   
   constructor(private service: SevillanoService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-    this.subscriber = this.route.params.subscribe(params => {
-      this.sevillano = params;
-   });
+    this.restaurant_name = this.route.snapshot.url[0].path;
     this.showMenu();
   }
 
   showMenu(){
-    this.service.getRestaurantMenu(this.sevillano.name)
+    this.service.getRestaurantMenu(this.restaurant_name)
     .subscribe({
       next:(response) => {
           this.sevillano = response["restaurant"];

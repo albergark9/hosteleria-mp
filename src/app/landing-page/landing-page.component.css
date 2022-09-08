@@ -1,0 +1,57 @@
+.image{
+    height: 50px;
+    width: 100px;
+    margin-top: -1rem;
+}
+
+.container  {
+    padding-right:0;
+    padding-left:0;
+    margin-right:auto;
+    margin-left:auto;
+    margin-right: 0%;
+    min-height: 100%;
+    min-width: 100%;
+  }
+  
+  .activity-container{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 100%;
+  }
+  
+  .nomargin{
+    margin: 0rem !important;
+    padding: 0rem !important;
+  }
+  
+  .card-text{
+    margin-left: 1rem;
+    color: white;
+  }
+  
+  .card-project{
+    margin: 0.5rem;
+    width: 100%;
+    height: 4rem;
+    background: transparent linear-gradient(90deg, #E9A14E 0%, #E6A65C 36%, #DB5C5F 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+  }
+  
+  .card-dashboard{
+    background: transparent linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 0%, #FFFFFF 0%, #FDFDFD 33%, #FCFCFC 36%, #FAFAFA 100%) 0% 0% no-repeat padding-box;
+    box-shadow: 3px 3px 10px #00000029;
+    border: 1px solid #FFFFFF;
+    border-radius: 10px;
+    opacity: 0.95;
+    min-height: 12rem;
+  }
+  
+  .card-body{
+    font-weight: bold;
+    text-align: left;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 0.8;
+  }
+  

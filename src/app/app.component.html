@@ -1,15 +1,2 @@
 <router-outlet></router-outlet>
 
-<div class="activity-content">
-    <div  *ngIf="this.restaurants" class="container-fluid activity-container">
-      <div class="col-centered" *ngFor="let restaurant of this.restaurants">
-          <div class="card card-project">
-            <div class="row card-body"  (click)="this.clickRestaurant(restaurant)">
-                <div class="col-4 nomargin"> 
-                    <img class="image" [src]=getImageSrc(restaurant)>
-                </div>
-                <p class="col nomargin card-text">{{restaurant.fullname}}</p>              
-            </div>
-        </div>
-    </div>   
-</div>
